@@ -1,0 +1,304 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 130vh;
+  max-width: 1600px;
+  background: #9f9acf url(../images/main.png) center top no-repeat;
+  background-size: cover;
+  text-align: center; }
+  .main__title {
+    position: absolute;
+    margin: auto;
+    top: 40%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2; }
+    .main__title h1 {
+      color: #fefefb;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 60.22px;
+      text-transform: uppercase; }
+    .main__title span {
+      color: #fefdfd;
+      font-family: "PT Sans", sans-serif;
+      font-size: 25px;
+      font-weight: 200;
+      font-style: italic; }
+
+.main-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(145, 113, 150, 0.3);
+  z-index: 1; }
+
+.top-nav {
+  position: relative;
+  padding: 17px;
+  z-index: 3; }
+  .top-nav__btn {
+    display: none;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 15px;
+    color: #fff;
+    outline: none; }
+    .top-nav__btn:hover {
+      cursor: pointer; }
+  .top-nav__btn:focus {
+    outline: none; }
+  .top-nav__logo {
+    margin-left: 100px; }
+    .top-nav__logo img {
+      width: 40px;
+      height: 52px; }
+  .top-nav__menu {
+    list-style: none;
+    padding: 0;
+    display: flex; }
+    .top-nav__menu li {
+      margin-right: 30px; }
+      .top-nav__menu li a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 60.03px;
+        font-family: 'Montserrat', sans-serif; }
+
+.about-us {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 124px 0 124px 0; }
+  .about-us img {
+    position: absolute;
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    font-size: 50px;
+    top: 75px;
+    left: 50%;
+    margin-left: -27px;
+    z-index: 3; }
+  .about-us span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 47.13px;
+    text-transform: uppercase;
+    color: #fefbfc;
+    z-index: 5; }
+
+.about-us__card {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background-color: #000;
+  background: #000 url(../images/about-us.png) left center no-repeat;
+  background-size: cover;
+  text-align: center; }
+  .about-us__card__overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(100, 100, 100, 0.2);
+    z-index: 1; }
+  .about-us__card__info {
+    position: relative;
+    padding-top: 35%;
+    z-index: 5; }
+
+.about-us__info {
+  padding: 77px;
+  color: #665f60;
+  font-family: "PT Sans",sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  font-style: italic; }
+
+.btn {
+  display: inline-block;
+  width: 197px;
+  height: 50px;
+  color: #7d7a7c;
+  font-size: 20px;
+  font-family: "PT Sans",sans-serif;
+  font-style: italic;
+  padding: 10px 50px;
+  border: 1px solid #7d797b;
+  border-radius: 0px;
+  margin-left: 30%; }
+
+.skills {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin-top: 125px;
+  padding: 0 9% 0 5%;
+  box-sizing: border-box; }
+
+.q, .w {
+  width: 100%; }
+
+.card-serv {
+  width: 100%;
+  min-width: 380px; }
+
+.card {
+  height: 100vh;
+  border: none;
+  text-align: center; }
+  .card__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+
+.title {
+  color: #665f60;
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 21px;
+  padding-top: 30px; }
+
+.descr {
+  color: #665f60;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  margin-bottom: 40px; }
+
+.card-1 {
+  width: 100%;
+  height: 50%;
+  background-color: rgba(159, 154, 207, 0.5); }
+
+.card-2 {
+  width: 100%;
+  height: 50%; }
+
+.card-3 {
+  width: 100%;
+  height: 50%; }
+
+.card-4 {
+  width: 100%;
+  height: 50%;
+  background-color: rgba(159, 154, 207, 0.5); }
+
+.card-5 {
+  width: 100%;
+  height: 100%;
+  background: #000 url(../images/card-5.png) center center no-repeat;
+  background-size: cover; }
+  .card-5__overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(159, 154, 207, 0.5);
+    z-index: 1; }
+  .card-5__descr {
+    color: #fefcfd;
+    font-family: "PT Sans";
+    font-size: 16px;
+    font-style: italic;
+    z-index: 5; }
+  .card-5__title {
+    position: absolute;
+    color: #fefcfd;
+    font-family: "Montserrat",sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    bottom: 430px;
+    z-index: 2; }
+  .card-5 .icon {
+    position: absolute;
+    bottom: 500px;
+    z-index: 3; }
+
+@media screen and (max-width: 480px) {
+  .main__title h1 {
+    font-size: 35px;
+    font-weight: 600; }
+  .main__title span {
+    font-size: 18px; }
+  .top-nav__logo {
+    margin-left: -30px; }
+  .top-nav__btn {
+    display: block;
+    margin-top: 10px; }
+    .top-nav__btn--active {
+      color: #7d08ed; }
+  .top-nav__menu {
+    position: relative;
+    flex-direction: column;
+    top: 50px;
+    left: 160px;
+    width: 150px;
+    display: none; }
+    .top-nav__menu :nth-child(2) {
+      left: 60px; }
+    .top-nav__menu :nth-child(3) {
+      left: 40px; }
+    .top-nav__menu :nth-child(4) {
+      left: 20px; }
+    .top-nav__menu :nth-child(1) {
+      left: 80px; }
+    .top-nav__menu--active {
+      display: flex; }
+    .top-nav__menu li {
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+      margin-right: 0; }
+      .top-nav__menu li a {
+        font-size: 14px;
+        line-height: 30px; } }
+
+.about-us__info {
+  padding: 77px 0;
+  color: #665f60;
+  font-family: "PT Sans",sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  font-style: italic; }
+
+.btn {
+  display: inline-block;
+  width: 197px;
+  height: 50px;
+  color: #7d7a7c;
+  font-size: 20px;
+  font-family: "PT Sans",sans-serif;
+  font-style: italic;
+  padding: 10px 50px;
+  border: 1px solid #7d797b;
+  border-radius: 0px;
+  margin-left: 30%; }
+
+@media screen and (max-width: 767px) {
+  .top-nav__logo img {
+    width: 50px;
+    height: 65px; }
+  .top-nav__btn {
+    display: block;
+    margin-top: 10px; }
+    .top-nav__btn--active {
+      color: #7d08ed; } }
