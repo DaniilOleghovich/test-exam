@@ -270,6 +270,15 @@ body
   padding: 0 15%
   margin-top: 200px
 
+.wrap-first
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  +breakpoint(765px)
+    flex-direction: row
+  +breakpoint(480px)
+    flex-direction: column
+
 .card-outer
   display: flex
   flex-direction: row
@@ -290,7 +299,7 @@ body
   max-height: 800px
   height: 100vh
   +breakpoint(765px)
-    min-width: 45%
+    min-width: 50%
   +breakpoint(480px)
     min-width: 100%
     display: flex
@@ -320,8 +329,6 @@ body
     background-position: -380px
     background-repeat: no-repeat center center
     background-size: cover
-    // +breakpoint(765px)
-    //   min-width: 100%
     &__overlay
       position: absolute
       height: 100%
