@@ -268,13 +268,19 @@ body
   max-height: 800px
   height: 100vh
   padding: 0 15%
-  margin-top: 200px
+  margin-top: 5%
+  +breakpoint(765px)
+    margin-top: 300px
+  +breakpoint(480px)
+    margin-top: 60%
 
 .wrap-first
   display: -webkit-flex
   display: -ms-flex
   display: flex
+  width: 100%
   +breakpoint(765px)
+    width: 100%
     flex-direction: row
   +breakpoint(480px)
     flex-direction: column
@@ -285,7 +291,7 @@ body
   width: 100%
   text-align: center
   +breakpoint(765px)
-  flex-direction: column
+    flex-wrap: wrap
   +breakpoint(480px)
     flex-direction: column
   &__info
@@ -295,7 +301,7 @@ body
     align-items: center
 
 .card-wrap
-  min-width: 32.5%
+  min-width: 50%
   max-height: 800px
   height: 100vh
   +breakpoint(765px)
