@@ -5,9 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width; initial-scale=1.0">
   <title>Даниил Павличенко - Портфолио</title>
+
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700|PT+Sans:400,400i" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
   <link rel="stylesheet" href="scss/fontello.css">
   <link rel="stylesheet" href="scss/fontello-embedded.css">
   <link rel="stylesheet" href="css/style.css">
@@ -119,6 +122,37 @@
 
 
 
+<section class="works">
+  <div class="works-inner container">
+    <div class="works-info">
+      <img src="images/Icon-Works.png" alt="works">
+      <p class="works-info__title">RECENT WORKS</p>
+    </div>
+    <div class="works-slider">
+      <iframe src="images/slider.png" width="731" height="549" align="center" scrolling="no"
+      frameborder="0">
+      </iframe>
+      <iframe src="images/slider.png" width="731" height="549" align="center" scrolling="no"
+      frameborder="0">
+      </iframe>
+      <iframe src="images/slider.png" width="731" height="549" align="center" scrolling="no"
+      frameborder="0">
+      </iframe>
+      <iframe src="images/slider.png" width="731" height="549" align="center" scrolling="no"
+      frameborder="0">
+      </iframe>
+    </div>
+    <a class="btn works-inner__btn" href="#">Learn More</a>
+  </div>
+</section>
+<!-- <div class="container">
+  <div class="container__block block-1"></div>
+  <div class="container__block block-2"></div>
+  <div class="container__block block-3"></div>
+  <div class="container__block block-4"></div>
+  <div class="container__block block-5"></div>
+  <div class="container__block block-6"></div>
+</div> -->
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -126,24 +160,9 @@
   </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js" integrity="sha384-u/bQvRA/1bobcXlcEYpsEdFVK/vJs3+T+nXLsBYJthmdBuavHvAW6UsmqO2Gd/F9" crossorigin="anonymous"></script>
-
-  <script>
-    $(document).ready(function(){
-      var menuBtn = $('.top-nav__btn');
-      var menu = $('.top-nav__menu');
-
-      menuBtn.click(function(){
-        menu.slideToggle(500);
-        $(this).toggleClass('top-nav__btn--active');
-      });
-      $(window).on('resize', function(){
-      if ($(document).width() > 480){
-         menu.attr('style', '');
-         menuBtn.removeClass('top-nav__btn--active');
-      }
-   });
-    });
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js">
   </script>
+
   <script>
     $(function() {
       var link = $('a[data-toggle="modal"]');
@@ -166,6 +185,9 @@
         }, 800);
       });
     });
+  </script>
+
+  <script src="script/main.js">
   </script>
 </body>
 

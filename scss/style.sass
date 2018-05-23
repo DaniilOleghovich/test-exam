@@ -379,4 +379,112 @@ body
   margin-bottom: 40px
 
 
+.container
+  width: 100%
+  max-width: 1170px
+  min-height: 1000px
+  margin: 0 auto
+
+.works
+  overflow: hidden
+  padding: 0 10%
+  background-color: #9f9acf
+  background-image: url(../images/DeathtoStock_Wired3.png)
+  background-repeat: no-repeat center center
+  background-size: cover
+  +breakpoint(768px)
+    margin-top: 800px
+  +breakpoint(480px)
+    margin-top: 1400px
+
+.works-inner
+  overflow: hidden
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  flex-direction: column
+  &__btn
+    margin: 10% auto
+    width: 195px
+    height: 50px
+    border: 1px solid #fff
+    font-size: 20px
+    color: rgb(255,255,255)
+    font-family: "PT Sans",sans-serif
+    font-style: italic
+    +breakpoint(480px)
+      margin-top: 40%
+
+.works-info
+  margin: 0 auto
+  text-align: center
+  img
+    margin-top: 15%
+  &__title
+    font-size: 27px
+    color: rgb(254,252,253)
+    font-family: "Montserrat",sans-serif
+    font-weight: 600
+    margin-top: 10%
+    +breakpoint(480px)
+      font-size: 20px
+
+.works-slider
+  box-sizing: border-box
+  max-width: 731px
+  margin: 5% auto
+  +breakpoint(768px)
+    width: 100%
+    // max-width: 530px
+  +breakpoint(480px)
+    width: 100%
+    // max-width: 100%
+
+.slick-prev
+  left: -130px
+  width: 35px
+  height: 35px
+
+.slick-next
+  right: -130px
+  width: 35px
+  height: 35px
+
+.slick-arrows
+  width: 38px
+  height: 38px
+  border-radius: 18px
+  background-color: #e5e5e5
+  +breakpoint(768px)
+    display: none
+  +breakpoint(480px)
+    display: none
+
+.slick-prev::before,
+    content: "<"
+    font-size: 40px
+
+.slick-next::before
+  content: ">"
+  font-size: 40px
+
+.slick-dots
+  bottom: -50px
+  +breakpoint(480px)
+    bottom: -10%
+  li
+    button::before
+      opacity: 0.25
+      border-color: #fff
+      color: #ebebeb
+
+#slick-slide-control00::before,
+#slick-slide-control01::before,
+#slick-slide-control02::before,
+#slick-slide-control03::before
+  color: #fff
+  border: #fff 1px solid
+  border-radius: 50%
+
+
 @import "_media.sass"
