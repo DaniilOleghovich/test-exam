@@ -108,7 +108,7 @@ body
       flex-direction: column
       top: 50px
       // left: 20%
-      width: 150px
+      width: 180px
       display: none
       // margin-left: 200%
     // & :nth-child(2)
@@ -125,8 +125,8 @@ body
       position: relative
       flex-direction: column
       top: 50px
-      margin-right: 25%
-      width: 150px
+      margin-right: 20%
+      width: 170px
       display: none
     & :nth-child(2)
       left: 60px
@@ -386,6 +386,9 @@ body
   margin: 0 auto
 
 .works
+  max-height: 1000px
+  min-height: 900px
+  height: 100vh
   overflow: hidden
   padding: 0 10%
   background-color: #9f9acf
@@ -413,7 +416,7 @@ body
     font-family: "PT Sans",sans-serif
     font-style: italic
     +breakpoint(480px)
-      margin-top: 40%
+      margin-top: 20%
 
 .works-info
   margin: 0 auto
@@ -431,14 +434,28 @@ body
 
 .works-slider
   box-sizing: border-box
+  max-height: 549px
   max-width: 731px
   margin: 5% auto
+  &__item
+    overflow: hidden
+    img
+      width: 100%
   +breakpoint(768px)
     width: 100%
     // max-width: 530px
   +breakpoint(480px)
     width: 100%
     // max-width: 100%
+
+.slick-list
+    max-height: 510px
+    height: 51vh
+    overflow: hidden
+    +breakpoint(768px)
+      height: 66vh
+    +breakpoint(480px)
+      height: 100vh
 
 .slick-prev
   left: -130px
@@ -471,7 +488,7 @@ body
 .slick-dots
   bottom: -50px
   +breakpoint(480px)
-    bottom: -10%
+    bottom: -15%
   li
     button::before
       opacity: 0.25
@@ -485,6 +502,115 @@ body
   color: #fff
   border: #fff 1px solid
   border-radius: 50%
+
+
+.team
+  display: flex
+  flex-direction: column
+  align-items: center
+  min-height: 790px
+  max-height: 820px
+  height: 100vh
+  background-color: #ebebeb
+  &-logo
+    width: 60px
+    height: 60px
+    margin-top: 56px
+  &-title
+    margin-top: 35px
+    font-size: 36px
+    color: rgb(102,95,96)
+    font-family: "Montserrat",sans-serif
+    font-weight: bold
+    text-align: center
+    text-transform: uppercase
+
+
+.team-slider
+  margin: 70px auto
+  // margin-top: 70px
+  display: flex
+  width: 70%
+  +breakpoint(700px)
+    width: 100%
+  +breakpoint(550px)
+    width: 80%
+
+.team-card
+  width: 30%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  position: relative
+  border-top: 125px solid #ebebeb
+  background-color: #fff
+  &__photo
+    position: absolute
+    left: 50%
+    top: -125px
+    transform: translate(-50%)
+    width: 72%
+    border: 10px solid #ebebeb
+    border-top: none
+    border-radius: 50%
+  &__title
+    margin-top: 45%
+    margin-bottom: 0
+    text-align: center
+    font-size: 24px
+    color: rgb(159,154,207)
+    text-transform: uppercase
+  &__desc
+    margin-top: 30px
+    margin-bottom: 0
+    text-align: center
+    font-size: 24px
+    color: rgb(102,95,96)
+    font-family: "PT Sans", sans-serif
+    font-style: italic
+
+.card-footer
+  display: flex
+  justify-content: center
+  width: 100%
+  // height: 50px
+  background-color: #9f9acf
+  margin-top: 25px
+  &__icon
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 32px
+    height: 32px
+    font-size: 15px
+    border-radius: 16px
+    color: #9f9acf
+    background-color: #ebebeb
+    margin: 0 3%
+    cursor: pointer
+
+.team-slider
+   .slick-slide
+      margin: 0 15px
+
+.slick-prev
+   left: -5%
+   &::before
+      content: url(../images/arrow-left.svg)
+      font-size: 40px
+
+.slick-next
+   right: -5%
+   &::before
+      content: url(../images/arrow-right.svg)
+      font-size: 40px
+
+.slick-list
+  height: 470px
+
+
+
 
 
 @import "_media.sass"
