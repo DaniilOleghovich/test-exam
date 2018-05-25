@@ -29,7 +29,9 @@ $('.works-slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   dots: true,
-  arrows: true
+  arrows: true,
+  autoplay: true,
+  autoplaySpeed: 3000
 });
 
 $('.team-slider').slick({
@@ -62,3 +64,26 @@ $('.team-slider').slick({
          }
       ]
    });
+
+
+
+$(function(){
+  $('a[data-target^="anchor"]').bind('click.smoothscroll', function(){
+    var target = $(this).attr('href'),
+        top = $(target).offset().top;
+    $('body,html').animate({scrollTop: top}, 700);
+    return false;
+  })
+});
+
+
+$(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            if ($('#upbutton').is(':hidden')) {
+                $('#upbutton').css({opacity : 1}).fadeIn('slow');
+            }
+        } else { $('#upbutton').stop(true, false).fadeOut('fast'); }
+    });
+    $('#upbutton').click(function() {
+        $('html, body').stop().animate({scrollTop : 0}, 1000);
+    });
